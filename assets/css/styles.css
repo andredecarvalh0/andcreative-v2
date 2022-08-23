@@ -676,7 +676,7 @@ display: none;
 /*==================== SERVICES ====================*/
 .services_container{
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .services_content{
   position: relative;
