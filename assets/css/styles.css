@@ -475,13 +475,7 @@ display: none;
 }
 
 /*==================== SKILLS ====================*/
-.skills{
-  background-color: #FEFBFB;
-  opacity: 0.8;
-  background-image:  radial-gradient(#be0203 0.5px, transparent 0.5px), radial-gradient(#be0203 0.5px, #FEFBFB 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0,10px 10px;
-}
+
 
 .skills_container{
   row-gap: 0;
