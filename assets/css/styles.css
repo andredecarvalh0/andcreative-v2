@@ -488,13 +488,13 @@ display: none;
   cursor: pointer;
 }
 
-.skills_icon,
 .skills_arrow{
   font-size: 2rem;
   color: var(--first-color);
 }
 
 .skills_icon{
+  width: 10%;
   margin-right: var(--mb-0-75);
 }
 
@@ -1457,7 +1457,7 @@ display: none;
   }
 
   .services_container{
-    grid-template-columns: repeat(3, 238px);
+    grid-template-columns: repeat(4, 200px);
   }
 
   .portfolio_content{
