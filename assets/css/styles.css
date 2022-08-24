@@ -8,7 +8,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 360; /*Purple 250 - Green 142 - Blue 230 - Pink 340 - Red and. Creative - 360*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 98%, 38%);
@@ -173,7 +173,7 @@ p {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  max-width: 900px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -434,11 +434,12 @@ display: none;
 
 /*==================== ABOUT ====================*/
 .about_img {
-  width: 200px;
+  width: 300px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
   margin-bottom: var(--mb-1-5);
+  order: 2;
 }
 
 .about_description{
@@ -474,6 +475,14 @@ display: none;
 }
 
 /*==================== SKILLS ====================*/
+.skills{
+  background-color: #FEFBFB;
+  opacity: 0.8;
+  background-image:  radial-gradient(#be0203 0.5px, transparent 0.5px), radial-gradient(#be0203 0.5px, #FEFBFB 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+}
+
 .skills_container{
   row-gap: 0;
 }
@@ -1235,6 +1244,7 @@ display: none;
 
   .about_img{
     width: 350px;
+    order: 1;
   }
 
   .about_description{
