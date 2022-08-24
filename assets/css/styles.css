@@ -1136,7 +1136,7 @@ display: none;
     order: 1;
     justify-content: center;
   }
-
+  
   .about_container,
   .skills_content,
   .portfolio_content,
@@ -1237,8 +1237,7 @@ display: none;
   }
 
   .about_img{
-    width: 350px;
-    order: 1;
+    width: 400px;
   }
 
   .about_description{
