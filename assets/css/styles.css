@@ -705,6 +705,13 @@ display: none;
   margin-bottom: var(--mb-1);
 }
 
+.atention_icon{
+  display: block;
+  font-size: 3rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-0-25);
+}
+
 .services_title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
@@ -778,6 +785,94 @@ display: none;
   visibility: visible;
 }
 
+/*==================== BONUS ====================*/
+.bonus{
+  text-align: center;
+}
+
+.bonus_img {
+  width: 300px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.bonus_description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.bonus_info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom:var(--mb-2-5);
+}
+
+.bonus_info-title{
+  font-size:var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}  
+
+.bonus_info-name{
+  font-size: var(--smaller-font-size);
+}
+
+.bonus_info-title,
+.bonus_info-name{
+  display: block;
+  text-align: center;
+}
+
+.bonus > .button{
+  display: inline-flex;
+    align-items: center;
+}
+
+/*==================== ATENTION ====================*/
+.atention{
+  text-align: center;
+}
+
+.atention_img {
+  width: 300px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: var(--mb-1-5);
+}
+
+.atention_description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.atention_info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom:var(--mb-2-5);
+}
+
+.atention_info-title{
+  font-size:var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}  
+
+.atention_info-name{
+  font-size: var(--smaller-font-size);
+}
+
+.atention_info-title,
+.atention_info-name{
+  display: block;
+  text-align: center;
+}
+
+.atention > i{
+  
+}
 
 
 /*==================== PORTFOLIO ====================*/
@@ -1140,6 +1235,8 @@ display: none;
   .about_container,
   .skills_content,
   .portfolio_content,
+  .bonus_container,
+  .atention_container,
   .project_container,
   .contact_container,
   .footer_container{
@@ -1273,6 +1370,13 @@ display: none;
     font-size: 2rem;
   }
 
+  .atention_icon{
+
+      font-size: 2rem;
+      color: var(--first-color);
+      margin-bottom: var(--mb-0-25);
+    }
+
   .services_content{
     padding: 6rem 0 2rem 2.5rem;
   }
@@ -1280,6 +1384,10 @@ display: none;
   .services_modal-content{
     width: 450px;
   }
+
+  .bonus_description {
+    text-align: left;
+}
 
   .portfolio_img{
     width: 320px;
