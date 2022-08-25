@@ -169,7 +169,10 @@ p {
 .section_title, 
 .section_subtitle {
   text-align: center;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
+
 
 /*==================== LAYOUT ====================*/
 .container {
@@ -444,7 +447,7 @@ display: none;
 }
 
 .about_description{
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -479,7 +482,7 @@ display: none;
 
 
 .skills_container{
-  row-gap: 0;
+  row-gap: 1.5rem;
 }
 
 .skills_header{
@@ -829,8 +832,7 @@ display: none;
   font-weight: var(--font-medium);
 }
 
-.antes p{
-  text-align: center;
+.citacao{
   margin-bottom: var(--mb-2-5);
 }
 
@@ -1033,6 +1035,11 @@ display: none;
   margin-bottom: var(--mb-2-5);
 }
 
+.bonus_description p{
+  text-align: left;
+
+}
+
 .bonus_info{
   display: flex;
   justify-content: space-evenly;
@@ -1078,7 +1085,7 @@ display: none;
 }
 
 .atention_description{
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -1101,7 +1108,7 @@ display: none;
 .atention_info-title,
 .atention_info-name{
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 /*==================== ORÇAMENTO ====================*/
