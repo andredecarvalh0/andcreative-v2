@@ -605,6 +605,12 @@ display: none;
   transform: rotate(-180deg);
 }
 
+.faq_content{
+ border: solid .5px var(--first-color-lighter);
+  padding: var(--mb-0-5);
+  margin-bottom: var(--mb-0-75);
+}
+
 
 /*==================== QUALIFICATION ====================*/
 .qualification_tabs {
@@ -833,7 +839,7 @@ display: none;
 }
 
 .citacao{
-  margin-bottom: var(--mb-2-5);
+  margin: var(--mb-2-5) auto;
 }
 
 .antes_button{
@@ -904,7 +910,7 @@ display: none;
   visibility: visible;
 }
 
-/*==================== COINTRATE ====================*/
+/*==================== CONTRATE ====================*/
 
 .contrate_container{
   gap: 1.5rem;
@@ -1178,6 +1184,49 @@ display: none;
 .bonus > .button{
   display: inline-flex;
     align-items: center;
+}
+
+/*==================== CONTRATE ====================*/
+
+.cont_content{
+  text-align: center;
+}
+
+.contrate_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--mb-1-5);
+}
+
+.venda_tittle{
+  margin-bottom: var(--mb-0-5);
+  font-size: xx-large;
+}
+
+.venda_valor{
+  font-size: 50px;
+  margin-top: var(--mb-0-75);
+}
+
+.venda_content{
+  margin-bottom: var(--mb-3);
+}
+
+.action > .button{
+  margin: var(--mb-2-5) 0;
+}
+
+.pagamentos{
+  margin-bottom: var(--mb-2-5);
+}
+
+.action > h2{
+  margin-bottom: var(--mb-2-5);
+}
+
+.action > h2 > span{
+  color: var(--first-color-alt);
 }
 
 /*==================== ATENTION ====================*/
@@ -1501,17 +1550,22 @@ display: none;
   padding: .25rem .5rem .5rem 0;
 }
 
+.whats-btn{
+  background-color: #25d366;
+}
+
 /*==================== FOOTER ====================*/
 .footer{
   padding-top: 2rem;
 }
 
 .footer_container{
+  text-align: center;
   row-gap: 3.5rem;
 }
 
 .footer_bg{
-  background-color: var(--first-color-second);
+  background-color: var(--first-color-alt);
   padding: 2rem 0 3rem;
 }
 
@@ -1737,7 +1791,7 @@ display: none;
   .skills_content,
   .portfolio_content,
   .bonus_container,
-  .atention_container,
+  /* .atention_container, */
   .antes_container,
   .contrate_container,
   .simples_container,
@@ -1950,7 +2004,7 @@ display: none;
   }
 
   .simples_content{
-    padding: 6rem 0 2rem 2.5rem;
+    padding: 6rem 2rem 2rem 2.5rem;
   }
 
   .simples_modal-content{
@@ -1960,7 +2014,7 @@ display: none;
 
   .bonus_description {
     text-align: left;
-}
+  }
 
   .portfolio_img{
     width: 320px;
@@ -2008,11 +2062,7 @@ display: none;
   }
 
   .footer_socials{
-    justify-content: flex-end;
-  }
-
-  .footer_copy{
-    margin-top: 4.5rem;
+    align-self: center;
   }
 }
 
