@@ -1050,9 +1050,6 @@ display: none;
   transition: .3s;
 }
 
-.simples_content:last-child{
-  margin-bottom: var(--mb-2-5);
-}
 
 .simples_content:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
@@ -1141,6 +1138,10 @@ display: none;
 .simples_modal-icon{
   color: var(--first-color);
   margin-right: var(--mb-0-25);
+}
+
+.simples_btn{
+  margin-top: var(--mb-2-5);
 }
 
 /* Active Modal */
@@ -1450,35 +1451,6 @@ display: none;
   outline: none;
 }
 
-/*==================== PROJECT IN MIND ====================*/
-.project{
-  text-align: center;
-}
-
-.project_bg{
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
-
-.project_title{
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
-}
-
-.project_description{
-  margin-bottom: var(--mb-1-5);
-}
-
-.project_title,
-.project_description{
-  color: #fff;
-}
-
-.project_img{
-  width: 232px;
-  justify-self: center;
-}
-
 /*==================== TESTIMONIAL ====================*/
 .testimonial_data,
 .testimonial_header{
@@ -1710,7 +1682,7 @@ display: none;
   background-image: url(https://cdn2.hubspot.net/hubfs/53/Pricing%202017%20Assets/marketing/Header_Circles-1.svg);
 }
 
-@-webkit-keyframes infiniteScroll {
+@keyframes infiniteScroll {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -1820,10 +1792,6 @@ display: none;
     padding: 0 .5rem;
   }
 
-  .project_img{
-    width: 200px;
-  }
-
   .testimonial_data,
   .testimonial_header{
     flex-direction: column;
@@ -1864,7 +1832,6 @@ display: none;
   .antes_container,
   .contrate_container,
   .simples_container,
-  .project_container,
   .contact_container,
   .footer_container{
     grid-template-columns: repeat(2, 1fr);
@@ -1876,10 +1843,6 @@ display: none;
     justify-content: center;
   }
 
-  .project_img{
-      order: -1;
-      justify-content: center;
-    }
 }
 
 @media screen and (min-width: 768px){
@@ -2039,7 +2002,7 @@ display: none;
   }
 
   .contrate_content{
-    padding: 6rem 0 2rem 2.5rem;
+    padding: 2.5rem;
   }
 
   .contrate_modal-content{
@@ -2080,6 +2043,13 @@ display: none;
     width: 450px;
   }
 
+  .pagamentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--mb-2-5) 0 0 0;
+  }
+
 
   .bonus_description {
     text-align: left;
@@ -2093,29 +2063,7 @@ display: none;
     align-items: center;
   }
 
-  .project{
-    text-align: initial;
-  }
-
-  .project_bg{
-    background: none;
-  }
-
-  .project_container{
-    background-color: var(--first-color-second);
-    border-radius: 1rem;
-    padding: 3rem 2.5rem 0;
-    grid-template-columns: 1fr max-content;
-    column-gap: 3rem;
-  }
-
-  .project_data{
-    padding-top: .8rem;
-  }
-
-  .project_img{
-    order: 0;
-  }
+  
 
   .footer_container{
     grid-template-columns: repeat(3, 1fr);
@@ -2189,6 +2137,15 @@ display: none;
 
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
+  }
+
+  .contact_container{
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  .contact_btn {
+    display: flex;
+    justify-content: center ;
   }
 
   .contact_form{
