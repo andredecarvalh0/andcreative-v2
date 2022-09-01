@@ -23,6 +23,7 @@
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --bg-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) ;
 
     /*========== Font and typography ==========*/
     --body-font: 'Comfortaa', sans-serif;
@@ -81,6 +82,7 @@ body.dark-theme{
      --container-color: hsl(var(--hue-color), 29%, 16%);
      --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
      --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+     --bg-color: linear-gradient(45deg, var(--body-color), #e73c7e98, var(--container-color), var(--first-color-second)) ;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -389,7 +391,10 @@ display: none;
 /*==================== BUTTONS ====================*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background: var(--bg-color);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  /* background-color: var(--first-color); */
   color: #fff;
   padding: 1rem;
   border-radius: .5rem;
@@ -422,7 +427,7 @@ display: none;
 }
 
 .button--small{
-  padding: .75rem 1rem;
+    padding: .75rem 1rem;
 }
 
 .button--link{
@@ -480,7 +485,7 @@ display: none;
 
 /*==================== SKILLS ====================*/
 .skills > h2{
-  margin-top: 200px;
+  margin-top: 70px;
 }
 
 .skills_container{
@@ -508,6 +513,10 @@ display: none;
   font-size:var(--h3-font-size);
 }
 
+.skills{
+  color: var(--title-color);
+}
+
 .skills_subtitle{
   font-size: var(--small-font-size);
   color: var(--text-color-light);
@@ -520,7 +529,7 @@ display: none;
 
 .skills_list{
   row-gap: 1.5rem;
-  padding-left: 2.7rem;
+  padding-left: 0.7rem;
 }
 
 .skills_titles{
@@ -608,9 +617,16 @@ display: none;
 }
 
 .faq_content{
- border: solid .5px var(--first-color-lighter);
-  padding: var(--mb-0-5);
+
+  padding: var(--mb-0-75);
   margin-bottom: var(--mb-0-75);
+
+    position: relative;
+    background-color: var(--container-color);
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    transition: .3s;
+  
 }
 
 
@@ -914,7 +930,7 @@ display: none;
 
 /*==================== CONTRATE ====================*/
 .contrate_bg{
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: var(--bg-color);
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 }
@@ -950,6 +966,18 @@ display: none;
 
 .contrate > .section_title > span{
   color: var(--first-color);
+}
+
+.contrate > h2{
+  margin-top: 70px;
+}
+
+.contrate > p{
+  color: var(--body-color);
+}
+
+.contrate > .action > p{
+  color: var(--body-color);
 }
 
 .contrate_icon{
@@ -1238,7 +1266,7 @@ display: none;
 }
 
 .pagamentos{
-  margin-bottom: var(--mb-2-5);
+  margin: var(--mb-2-5) 0  0;
 }
 
 .action > h2{
@@ -1254,12 +1282,18 @@ display: none;
   text-align: center;
 }
 
-.atention_img {
-  width: 300px;
-  border-radius: .5rem;
-  justify-self: center;
-  align-self: center;
-  margin-bottom: var(--mb-1-5);
+.atention_content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 3.5rem .5rem 1.25rem 1.5rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+  transition: .3s;
+  color: #fff;
+}
+
+.atention_content:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
 }
 
 .atention_description{
@@ -1394,6 +1428,7 @@ display: none;
 
 
 /*==================== PORTFOLIO ====================*/
+
 .portfolio_container{
   overflow: initial;
 }
@@ -1556,7 +1591,7 @@ display: none;
 }
 
 .footer_bg{
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
 }
 
@@ -1591,7 +1626,7 @@ display: none;
 .footer_copy{
   font-size: var(--smaller-font-size);
   text-align: center;
-  color:var(--text-color-light);
+  color: var(--body-color);
   margin-top: var(--mb-3);
 }
 
