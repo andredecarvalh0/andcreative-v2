@@ -1584,8 +1584,12 @@ display: none;
   padding: .25rem .5rem .5rem 0;
 }
 
-.whats-btn{
-  background-color: #25d366;
+.contact_form > img{
+  margin-top: -50px;
+}
+
+.contact_btn{
+ margin-top:var(--mb-2-5);
 }
 
 /*==================== FOOTER ====================*/
@@ -2072,6 +2076,10 @@ display: none;
     text-align: left;
   }
 
+  .bonus_btn{
+    margin-top: var(--mb-2-5);
+  }
+
   .portfolio_img{
     width: 320px;
   }
@@ -2176,10 +2184,6 @@ display: none;
     bottom: -4.5rem;
   }
 
-  .contact_container{
-    grid-template-columns: repeat(3, 1fr)
-  }
-
   .contact_btn {
     display: flex;
     justify-content: center ;
@@ -2189,7 +2193,15 @@ display: none;
     width: 460px;
   }
 
+  .contact_form > img{
+    height: 300px;
+  }
+
   .contact_inputs{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact_information{
+   margin-left: 8rem;
   }
 }
