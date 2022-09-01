@@ -479,7 +479,9 @@ display: none;
 }
 
 /*==================== SKILLS ====================*/
-
+.skills > h2{
+  margin-top: 200px;
+}
 
 .skills_container{
   row-gap: 1.5rem;
@@ -1603,7 +1605,7 @@ display: none;
 /*========== SCROLL UP ==========*/
 .scrollup{
   position: fixed;
-  right: 1rem;
+  left: 1rem;
   bottom: -20%;
   background-color: var(--first-color);
   opacity: .8;
