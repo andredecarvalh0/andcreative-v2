@@ -24,6 +24,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --bg-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) ;
+    --bg-color-hover: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) ;
 
     /*========== Font and typography ==========*/
     --body-font: 'Comfortaa', sans-serif;
@@ -82,7 +83,8 @@ body.dark-theme{
      --container-color: hsl(var(--hue-color), 29%, 16%);
      --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
      --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-     --bg-color: linear-gradient(45deg, var(--body-color), #e73c7e98, var(--container-color), var(--first-color-second)) ;
+     --bg-color: linear-gradient(-45deg, var(--body-color), #e73c7e98, var(--container-color), var(--first-color-second)) ;
+     --bg-color-hover: linear-gradient(45deg, var(--body-color), #e73c7e98, var(--container-color), var(--first-color-second)) ;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -403,7 +405,13 @@ display: none;
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
+  background: var(--bg-color-hover);
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+}
+
+.button-wts:hover{
+  background: #25d366;
 }
 
 .button_icon{
