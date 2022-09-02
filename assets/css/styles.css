@@ -79,7 +79,7 @@ body.dark-theme{
      --title-color: hsl(var(--hue-color), 8%, 95%);
      --text-color: hsl(var(--hue-color), 8%, 75%);
      --input-color: hsl(var(--hue-color), 29%, 16%);
-     --body-color: hsl(var(--hue-color), 28%, 12%);
+     --body-color: hsl(var(--hue-color), 0%, 4%);
      --container-color: hsl(var(--hue-color), 29%, 16%);
      --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
      --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
@@ -223,6 +223,8 @@ p {
   font-size: 28px;
 }
 
+
+
 .nav_toggle {
   font-size: 1.1rem;
   cursor: pointer;
@@ -230,6 +232,11 @@ p {
 
 .nav_toggle:hover {
   color: var(--first-color);
+}
+
+
+.uis-whatsapp{
+  color: #25d366;
 }
 
 @media screen and (max-width: 767px){
@@ -296,6 +303,7 @@ p {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
+
 /*==================== HOME ====================*/
 .home_container{
   gap: 1rem;
@@ -320,6 +328,10 @@ p {
 
 .home_social-icon:hover{
   color: var(--first-color-alt);
+}
+
+.social_whats{
+  display: none;
 }
 
 .home_blob{
@@ -408,6 +420,10 @@ display: none;
   background: var(--bg-color-hover);
   background-size: 400% 400%;
   animation: gradient 2s ease infinite;
+}
+
+.button-wts{
+  margin-bottom: var(--mb-2-5);
 }
 
 .button-wts:hover{
@@ -1846,6 +1862,10 @@ display: none;
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+
+  .social_whats{
+    display: flex;
   }
 
 }
