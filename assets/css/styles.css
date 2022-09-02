@@ -303,6 +303,29 @@ p {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
+/*==================== STARS ====================*/
+.star{
+  position: fixed;
+  z-index: -99;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 1px;
+  background-color: #fefbfb;
+  border-radius: 50%;
+  box-shadow: -24vw -44vh 2px 2px #fefbfb,38vw -4vh 0px 0px #fefbfb,-20vw -48vh 1px 2px #fefbfb,-39vw 38vh 3px 1px #fefbfb,-42vw -11vh 0px 3px #fefbfb,12vw 15vh 3px 3px #fefbfb,42vw 6vh 3px 2px #fefbfb,-8vw 9vh 0px 2px #fefbfb,34vw -38vh 1px 0px #fefbfb,-17vw 45vh 3px 1px #fefbfb,22vw -36vh 3px 2px #fefbfb,-42vw 1vh 1px 0px #fefbfb;
+  animation: zoom 10s alternate infinite;
+}
+
+@keyframes zoom {
+  0%{
+      transform: scale(.5);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
 
 /*==================== HOME ====================*/
 .home_container{
