@@ -190,6 +190,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
 //Stars
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min
