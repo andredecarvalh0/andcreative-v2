@@ -1,3 +1,4 @@
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -7,7 +8,7 @@ const navMenu = document.getElementById('nav-menu'),
 /* Validate if constant exists */
     if(navToggle){
         navToggle.addEventListener('click', () => {
-            navMenu.classList.add('show-menu')
+            navMenu.classList.add('show-menu');
         })
     }
 
@@ -136,11 +137,11 @@ function scrollActive(){
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
+        // if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        //     document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
+        // }else{
+        //     document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        // }
     })
 }
 window.addEventListener('scroll', scrollActive)
@@ -201,4 +202,8 @@ let result = ""
 for(let i = 0; i < STAR_COUNT; i++){
     result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 3)}px ${randomNumber(0, 3)}px #fff,`
 }
-console.log(result.substring(0, result.length - 1))
+// console.log(result.substring(0, result.length - 1))
+
+/*===== PRESENTATION =====*/
+
+console.log("-- Olá! para maiores informações acesse: https://github.com/andredecarvalh0.\n-- Hello! for more info visit: https://github.com/andredecarvalh0. \n\n Sou um desenvolvedor júnior apaixonado por tecnologia e por criar projetos interessantes, procurando resolver problemas do mundo real.\n Profissional competente, determinado e de raciocínio rápido. Perfil analítico e inovador. Capacidade de negociação, comunicação, adaptabilidade a novas funções e novos ambientes. Mentalidade motivadora. \n Durante minha jornada profissional, analisei dados, desenvolvi e aperfeiçoei relatórios capazes de direcionar meus empregadores, maximizar resultados e contribuir com a equipe. \n A paixonado por tecnologia e programação decidi seguir meu sonho e me tornar um desenvolvedor. Em 2020 iniciei meus estudos e, a partir daí, desenvolvi alguns projetos e hoje posso trabalhar com JavaScript, HTML, CSS e Git.\n Agora, meu objetivo é continuar me aprimorando e desenvolvendo novas habilidades em empresas que me dão a oportunidade de crescer profissionalmente e pessoalmente.\n\n");
