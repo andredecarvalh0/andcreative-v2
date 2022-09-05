@@ -542,8 +542,14 @@ display: none;
 .skills_header{
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
+    cursor: pointer;
+}
+
+.skills_num{
+  color: var(--first-color);
+  font-size: 4rem;
+  padding: var(--mb-0-5);
+  margin-right: var(--mb-1);
 }
 
 .skills_arrow{
