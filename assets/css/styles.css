@@ -542,7 +542,7 @@ display: none;
 .skills_header{
   display: flex;
   align-items: center;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .skills_num{
@@ -550,6 +550,10 @@ display: none;
   font-size: 4rem;
   padding: var(--mb-0-5);
   margin-right: var(--mb-1);
+}
+
+.skills_num_1{
+  margin-right: 30px;
 }
 
 .skills_arrow{
@@ -1008,6 +1012,7 @@ display: none;
   gap: 1.5rem;
   grid-template-columns: repeat(1, 1fr);
 }
+
 .contrate_content{
   position: relative;
   background-color: var(--container-color);
@@ -1808,9 +1813,7 @@ display: none;
     justify-content: center;
   }
 
-  .contrate_content{
-    padding-right: 3.5rem; 
-  }
+
 
   .contrate_modal{
     padding: 0 .5rem;
