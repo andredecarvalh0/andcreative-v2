@@ -1917,6 +1917,10 @@ display: none;
     margin-bottom: 4rem;
   }
 
+  .section_subtitle_contrate{
+    margin-bottom: 2rem;
+  }
+
   .header{
     top: 0;
     bottom: initial;
