@@ -418,8 +418,9 @@ display: none;
   transform: translateY(0.25rem)
 }
 
-.home_scroll-mouse{
-  font-size: 2rem;
+.home_scroll-angle-down{
+  font-size: 2.5rem;
+  
 }
 
 .home_scroll-name{
@@ -1985,11 +1986,25 @@ display: none;
   }
 
   .home_scroll{
-    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrow-animation {
+    animation: slide-bottom 1.7s linear infinite alternate both;
+  }
+
+  @keyframes slide-bottom {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(25px);
+    }
   }
 
   .home_scroll-button{
-    margin-left: 3rem;
+    margin-left: var(--mb-2-5)
   }
 
   .about_container{
@@ -2197,7 +2212,12 @@ display: none;
   }
 
   .home_tittle{
-    line-height: 45px;
+    line-height: 50px;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  .home_description{
+    margin-bottom: var(--mb-2-5);
   }
 
   .home_social{
