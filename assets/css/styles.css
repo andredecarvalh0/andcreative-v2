@@ -1031,6 +1031,11 @@ display: none;
   transition: .3s;
 }
 
+/* .contrate_content_best{
+  background: var(--first-color);
+  color: var(--title-color);
+} */
+
 .contrate_content:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
 }
@@ -1041,6 +1046,19 @@ display: none;
 
 .contrate > h2{
   margin-top: 70px;
+}
+
+.best {
+  width: 7rem;
+  top: -1.2rem;
+  right: -1.5rem;
+  position: absolute;
+  rotate: 8deg;
+}
+
+.best:hover{
+  -webkit-transform: scale(1.2);
+   transform: scale(1.2);
 }
 
 .contrate > p{
